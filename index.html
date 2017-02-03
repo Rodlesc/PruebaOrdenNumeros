@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Secuencia de Números</title>
+<!--Uso de la libreria bootstrap para los estilos y diseño del formulario -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div>
+        	<a class="navbar-brand" href="#">Secuencia de Números</a>
+        </div>
+    </nav>
+    
+    <div class="container theme-showcase" role="main">
+        <div class="jumbotron">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" id="txtNumero" placeholder="Número" class="form-control" onKeyPress="return soloNumeros(event)">
+                </div>
+                <button type="button" class="btn btn-success" id="btnAgregar">Agregar</button>
+                <button type="button" class="btn btn-primary" id="btnOrdenar">Ordenar</button>
+                <button type="button" class="btn btn-primary" id="btnLimpiar">Limpiar</button>
+            </form>          
+        </div>
+        <hr />
+        <div class="jumbotron">
+        	<h2 id="txtSecuencia"></h2>
+            <h2 id="txtOrdenado"></h2>
+        </div>        
+    </div>
+    <!--Jquery para trabajar con eventos javascript -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Nuestro archivo index.js realizara todos los eventos del formulario -->
+    <script src="js/index.js"></script>
+</body>
+</html>
